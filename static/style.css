@@ -3,11 +3,16 @@
     --primary-color: #ffffff;
     --font-family: 'Poppins', sans-serif;
   }
+  html{
+    padding-top:25px;
+    height:100%;
+  }
 
-  
   body {
+    margin: 0;
     font-family: var(--font-family);
-    background-color: var(--bg-color);
+    /*background-color: #1a1818 !important;*/
+    background-image: linear-gradient(#1a1818,#3e3939);
     color: var(--primary-color);
     display: grid;
     place-items: center;
@@ -15,20 +20,28 @@
 
   main {
     display: grid;
-    grid-template-columns: 1000px;
+    grid-template-columns: 750px;
     grid-template-rows: 200px 20px;
     place-items: center;
   }
-
-
-  .Header {
-    display: grid;
-    grid-template-columns: inherit;
-    place-items: center start;
-  }
   
-  hr.Dotted {
-    border-top: 3px dashed #bbb;
+  header{
+    width: auto;
+  }
+
+  table{
+    width: 750px;
+    display: table;
+    border-spacing: 2px;
+  }
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+  } 
+
+  .links:hover{
+    color:#bbb;
   }
 
   .Info {
@@ -36,12 +49,15 @@
     grid-template-columns: 2fr 1fr;
     place-items: start center;
   }
-
+  .Carp{
+    float:right;
+  }
   p.name {
     font: 2em 'Poppins', sans-serif;
     font-weight: 500;
   }
-  hr {
+
+  hr.PageDivider {
     border: none;
     border-top: 3px dotted #bbb;
     width: 100%;
